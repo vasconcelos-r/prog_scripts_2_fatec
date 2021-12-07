@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Projeto</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="projeto.css" />
+		<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="projeto.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="img/livros.png" height="150" width="100%" />
+		</header>
+		<section>
+			<div class="container">				
+				<h1>Cadastro de Livros</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="nome">Nome:</label>
+							<input type="text" id="nome" name="nome" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="autor">Autor:</label>
+							<input type="text" id="autor" name="autor" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="genero">Genero:</label>
+							<input type="text" id="genero" name="genero" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="editora">Editora:</label>
+							<input type="text" id="editora" name="editora" class="form-control" />
+						</div>
+						<div class="form-group">
+							<button id="btnSalvar" class="btn btn-secondary"">Salvar</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<table class="table table-striped">
+							<thead class="table-dark">
+								<tr>
+									<th>Nome</th>
+									<th>Autor</th>
+									<th>Genero</th>
+									<th>Editora</th>
+									<th>Alterar</th>
+									<th>Excluir</th>
+								</tr>
+							</thead>
+							<tbody id="tbTabela">
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row mt-4"> 
+					<div class="col-md-3">
+						<button class="btn btn-success" id="btnAjax">Ajax</button>
+					</div>
+					<div class="col-md-3">
+						<button class="btn btn-success" id="btnJson">JSON</button>
+					</div>
+					<div class="col-md-6">
+						<div id="retornoAjax"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			Projeto
+		</footer>
+	</body>
+</html>
